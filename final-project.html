@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="1398305586_196749.ico">
+
+    <title>Data Journalism</title>
+
+    <link href="http://bootswatch.com/flatly/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>If only goals by English players counted, Liverpool would still be top of <a href="http://www.premierleague.com/en-gb.html" target="_blank">EPL</a></h1>
+            <p class="lead">John's final project for the <a href="http://kpq.github.io/nyu-data-journalism-2014/" target="_blank">Data Journalism class</a>.</p>
+          </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <blockquote>
+  <p>How would the Premier League table look if only goals from English players are counted? With an incredible volume of foreign players now in the Premier League it’s a question that gets asked alarmingly frequently. I’ve looked into every single Premier League match this season to find out exactly who would come out on top.</p>
+  <p>Under the new rule, 274 matches ended differently; 618 goals were removed. Browse the two tables below to see the original and modified team performance.</p>
+</blockquote>
+      </div>
+    </div>
+
+<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+  <li class="active"><a href="#original" data-toggle="tab">Original Table</a></li>
+  <li><a href="#new" data-toggle="tab">Alternative Table</a></li>
+  </ul>
+
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade active in" id="original">
+    <table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th class="#-cell">#</th>
+      <th class="Team-cell">Team</th>
+      <th class="Games Played-cell">Games Played</th>
+      <th class="Wins-cell">Wins</th>
+      <th class="Draws-cell">Draws</th>
+      <th class="Losses-cell">Losses</th>
+      <th class="Goals Scored-cell">Goals Scored</th>
+      <th class="Points-cell">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  class="success">
+      <td class="#-cell">1</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Liverpool-FC.ico" width="19" height="19">&nbsp;&nbsp;Liverpool</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">25</td>
+      <td class="Draws-cell">5</td>
+      <td class="Losses-cell">5</td>
+      <td class="Goals Scored-cell">96</td>
+      <td class="Points-cell">80</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">2</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Chelsea.ico" width="19" height="19">&nbsp;&nbsp;Chelsea</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">23</td>
+      <td class="Draws-cell">6</td>
+      <td class="Losses-cell">6</td>
+      <td class="Goals Scored-cell">67</td>
+      <td class="Points-cell">75</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">3</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Manchester-City.ico" width="19" height="19">&nbsp;&nbsp;Manchester City</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">23</td>
+      <td class="Draws-cell">5</td>
+      <td class="Losses-cell">6</td>
+      <td class="Goals Scored-cell">91</td>
+      <td class="Points-cell">74</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">4</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Arsenal.ico" width="19" height="19">&nbsp;&nbsp;Arsenal</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">21</td>
+      <td class="Draws-cell">7</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">62</td>
+      <td class="Points-cell">70</td>
+    </tr>
+    <tr class="info">
+      <td class="#-cell">5</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Everton.ico" width="19" height="19">&nbsp;&nbsp;Everton</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">20</td>
+      <td class="Draws-cell">9</td>
+      <td class="Losses-cell">6</td>
+      <td class="Goals Scored-cell">57</td>
+      <td class="Points-cell">69</td>
+    </tr>
+    <tr class="info">
+      <td class="#-cell">6</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Tottenham-Hotspur.ico" width="19" height="19">&nbsp;&nbsp;Tottenham Hotspur</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">19</td>
+      <td class="Draws-cell">6</td>
+      <td class="Losses-cell">10</td>
+      <td class="Goals Scored-cell">51</td>
+      <td class="Points-cell">63</td>
+    </tr>
+    <tr>
+      <td class="#-cell">7</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Manchester-United.ico" width="19" height="19">&nbsp;&nbsp;Manchester United</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">17</td>
+      <td class="Draws-cell">6</td>
+      <td class="Losses-cell">11</td>
+      <td class="Goals Scored-cell">56</td>
+      <td class="Points-cell">57</td>
+    </tr>
+    <tr>
+      <td class="#-cell">8</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Southampton-FC.ico" width="19" height="19">&nbsp;&nbsp;Southampton</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">13</td>
+      <td class="Draws-cell">10</td>
+      <td class="Losses-cell">12</td>
+      <td class="Goals Scored-cell">50</td>
+      <td class="Points-cell">49</td>
+    </tr>
+    <tr>
+      <td class="#-cell">9</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Newcastle-United.ico" width="19" height="19">&nbsp;&nbsp;Newcastle United</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">14</td>
+      <td class="Draws-cell">4</td>
+      <td class="Losses-cell">17</td>
+      <td class="Goals Scored-cell">39</td>
+      <td class="Points-cell">46</td>
+    </tr>
+    <tr>
+      <td class="#-cell">10</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Stoke-City.ico" width="19" height="19">&nbsp;&nbsp;Stoke City</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">11</td>
+      <td class="Draws-cell">11</td>
+      <td class="Losses-cell">13</td>
+      <td class="Goals Scored-cell">39</td>
+      <td class="Points-cell">44</td>
+    </tr>
+    <tr>
+      <td class="#-cell">11</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Crystal-Palace.ico" width="19" height="19">&nbsp;&nbsp;Crystal Palace</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">13</td>
+      <td class="Draws-cell">4</td>
+      <td class="Losses-cell">18</td>
+      <td class="Goals Scored-cell">28</td>
+      <td class="Points-cell">43</td>
+    </tr>
+    <tr>
+      <td class="#-cell">12</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-West-Ham-United.ico" width="19" height="19">&nbsp;&nbsp;West Ham United</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">10</td>
+      <td class="Draws-cell">7</td>
+      <td class="Losses-cell">18</td>
+      <td class="Goals Scored-cell">38</td>
+      <td class="Points-cell">37</td>
+    </tr>
+    <tr>
+      <td class="#-cell">13</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Swansea-City.ico" width="19" height="19">&nbsp;&nbsp;Swansea City</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">9</td>
+      <td class="Draws-cell">9</td>
+      <td class="Losses-cell">17</td>
+      <td class="Goals Scored-cell">47</td>
+      <td class="Points-cell">36</td>
+    </tr>
+    <tr>
+      <td class="#-cell">14</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Hull-City.ico" width="19" height="19">&nbsp;&nbsp;Hull City</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">10</td>
+      <td class="Draws-cell">6</td>
+      <td class="Losses-cell">18</td>
+      <td class="Goals Scored-cell">34</td>
+      <td class="Points-cell">36</td>
+    </tr>
+    <tr>
+      <td class="#-cell">15</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Aston-Villa.ico" width="19" height="19">&nbsp;&nbsp;Aston Villa</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">9</td>
+      <td class="Draws-cell">8</td>
+      <td class="Losses-cell">17</td>
+      <td class="Goals Scored-cell">35</td>
+      <td class="Points-cell">35</td>
+    </tr>
+    <tr>
+      <td class="#-cell">16</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-West-Bromwich-Albion.ico" width="19" height="19">&nbsp;&nbsp;West Bromwich Albion</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">6</td>
+      <td class="Draws-cell">15</td>
+      <td class="Losses-cell">13</td>
+      <td class="Goals Scored-cell">41</td>
+      <td class="Points-cell">33</td>
+    </tr>
+    <tr>
+      <td class="#-cell">17</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Norwich-City.ico" width="19" height="19">&nbsp;&nbsp;Norwich City</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">8</td>
+      <td class="Draws-cell">8</td>
+      <td class="Losses-cell">19</td>
+      <td class="Goals Scored-cell">28</td>
+      <td class="Points-cell">32</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">18</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Fulham-FC.ico" width="19" height="19">&nbsp;&nbsp;Fulham</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">9</td>
+      <td class="Draws-cell">3</td>
+      <td class="Losses-cell">23</td>
+      <td class="Goals Scored-cell">35</td>
+      <td class="Points-cell">30</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">19</td>
+      <td class="Team-cell"><img src="297px-Cardiff_City_Crest.svg.png" width="3.6%" height="5.5%">&nbsp;&nbsp;Cardiff City</td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">7</td>
+      <td class="Draws-cell">9</td>
+      <td class="Losses-cell">19</td>
+      <td class="Goals Scored-cell">31</td>
+      <td class="Points-cell">30</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">20</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Sunderland.ico" width="19" height="19">&nbsp;&nbsp;Sunderland</td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">7</td>
+      <td class="Draws-cell">8</td>
+      <td class="Losses-cell">19</td>
+      <td class="Goals Scored-cell">33</td>
+      <td class="Points-cell">29</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+  <div class="tab-pane fade" id="new">
+    <table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th class="#-cell">#</th>
+      <th class="Team-cell">Team</th>
+      <th class="Games Played-cell">Games Played</th>
+      <th class="Wins-cell">Wins</th>
+      <th class="Draws-cell">Draws</th>
+      <th class="Losses-cell">Losses</th>
+      <th class="Goals Scored-cell">Goals Scored</th>
+      <th class="Points-cell">Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="success">
+      <td class="#-cell">1</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Liverpool-FC.ico" width="19" height="19">&nbsp;&nbsp;Liverpool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-minus"></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">22</td>
+      <td class="Draws-cell">12</td>
+      <td class="Losses-cell">1</td>
+      <td class="Goals Scored-cell">48</td>
+      <td class="Points-cell">78</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">2</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Southampton-FC.ico" width="19" height="19">&nbsp;&nbsp;Southampton&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 6</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">18</td>
+      <td class="Draws-cell">12</td>
+      <td class="Losses-cell">5</td>
+      <td class="Goals Scored-cell">36</td>
+      <td class="Points-cell">66</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">3</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Manchester-United.ico" width="19" height="19">&nbsp;&nbsp;Manchester United&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 4</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">16</td>
+      <td class="Draws-cell">11</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">32</td>
+      <td class="Points-cell">59</td>
+    </tr>
+    <tr class="success">
+      <td class="#-cell">4</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Everton.ico" width="19" height="19">&nbsp;&nbsp;Everton&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 1</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">13</td>
+      <td class="Draws-cell">18</td>
+      <td class="Losses-cell">4</td>
+      <td class="Goals Scored-cell">18</td>
+      <td class="Points-cell">57</td>
+    </tr>
+    <tr class="info">
+      <td class="#-cell">5</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-West-Ham-United.ico" width="19" height="19">&nbsp;&nbsp;West Ham United&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 7</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">11</td>
+      <td class="Draws-cell">17</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">27</td>
+      <td class="Points-cell">50</td>
+    </tr>
+    <tr class="info">
+      <td class="#-cell">6</td>
+      <td class="Team-cell"><img src="297px-Cardiff_City_Crest.svg.png" width="3.6%" height="5.5%">&nbsp;&nbsp;Cardiff City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 13</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">11</td>
+      <td class="Draws-cell">15</td>
+      <td class="Losses-cell">9</td>
+      <td class="Goals Scored-cell">22</td>
+      <td class="Points-cell">48</td>
+    </tr>
+    <tr>
+      <td class="#-cell">7</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Crystal-Palace.ico" width="19" height="19">&nbsp;&nbsp;Crystal Palace&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 4</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">11</td>
+      <td class="Draws-cell">13</td>
+      <td class="Losses-cell">11</td>
+      <td class="Goals Scored-cell">18</td>
+      <td class="Points-cell">46</td>
+    </tr>
+    <tr>
+      <td class="#-cell">8</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Sunderland.ico" width="19" height="19">&nbsp;&nbsp;Sunderland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 12</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">9</td>
+      <td class="Draws-cell">16</td>
+      <td class="Losses-cell">9</td>
+      <td class="Goals Scored-cell">18</td>
+      <td class="Points-cell">43</td>
+    </tr>
+    <tr>
+      <td class="#-cell">9</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Hull-City.ico" width="19" height="19">&nbsp;&nbsp;Hull City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 5</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">8</td>
+      <td class="Draws-cell">19</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">15</td>
+      <td class="Points-cell">43</td>
+    </tr>
+    <tr>
+      <td class="#-cell">10</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Chelsea.ico" width="19" height="19">&nbsp;&nbsp;Chelsea&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 8</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">7</td>
+      <td class="Draws-cell">22</td>
+      <td class="Losses-cell">6</td>
+      <td class="Goals Scored-cell">10</td>
+      <td class="Points-cell">43</td>
+    </tr>
+    <tr>
+      <td class="#-cell">11</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Stoke-City.ico" width="19" height="19">&nbsp;&nbsp;Stoke City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 1</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">8</td>
+      <td class="Draws-cell">16</td>
+      <td class="Losses-cell">11</td>
+      <td class="Goals Scored-cell">15</td>
+      <td class="Points-cell">40</td>
+    </tr>
+    <tr>
+      <td class="#-cell">12</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Norwich-City.ico" width="19" height="19">&nbsp;&nbsp;Norwich City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 5</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">6</td>
+      <td class="Draws-cell">22</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">14</td>
+      <td class="Points-cell">40</td>
+    </tr>
+    <tr>
+      <td class="#-cell">13</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Arsenal.ico" width="19" height="19">&nbsp;&nbsp;Arsenal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 9</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">6</td>
+      <td class="Draws-cell">22</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">10</td>
+      <td class="Points-cell">40</td>
+    </tr>
+    <tr>
+      <td class="#-cell">14</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-English-Football-Club-Swansea-City.ico" width="19" height="19">&nbsp;&nbsp;Swansea City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 1</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">8</td>
+      <td class="Draws-cell">13</td>
+      <td class="Losses-cell">14</td>
+      <td class="Goals Scored-cell">15</td>
+      <td class="Points-cell">37</td>
+    </tr>
+    <tr>
+      <td class="#-cell">15</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Fulham-FC.ico" width="19" height="19">&nbsp;&nbsp;Fulham&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-success">&uarr; 3</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">6</td>
+      <td class="Draws-cell">17</td>
+      <td class="Losses-cell">12</td>
+      <td class="Goals Scored-cell">15</td>
+      <td class="Points-cell">35</td>
+    </tr>
+    <tr>
+      <td class="#-cell">16</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Tottenham-Hotspur.ico" width="19" height="19">&nbsp;&nbsp;Tottenham Hotspur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 10</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">4</td>
+      <td class="Draws-cell">22</td>
+      <td class="Losses-cell">9</td>
+      <td class="Goals Scored-cell">7</td>
+      <td class="Points-cell">34</td>
+    </tr>
+    <tr>
+      <td class="#-cell">17</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Aston-Villa.ico" width="19" height="19">&nbsp;&nbsp;Aston Villa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 2</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">5</td>
+      <td class="Draws-cell">16</td>
+      <td class="Losses-cell">13</td>
+      <td class="Goals Scored-cell">9</td>
+      <td class="Points-cell">31</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">18</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Manchester-City.ico" width="19" height="19">&nbsp;&nbsp;Manchester City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 15</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">1</td>
+      <td class="Draws-cell">26</td>
+      <td class="Losses-cell">7</td>
+      <td class="Goals Scored-cell">4</td>
+      <td class="Points-cell">29</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">19</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-Newcastle-United.ico" width="19" height="19">&nbsp;&nbsp;Newcastle United&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="label label-danger">&darr; 10</span></td>
+      <td class="Games Played-cell">35</td>
+      <td class="Wins-cell">1</td>
+      <td class="Draws-cell">23</td>
+      <td class="Losses-cell">11</td>
+      <td class="Goals Scored-cell">1</td>
+      <td class="Points-cell">26</td>
+    </tr>
+    <tr class="danger">
+      <td class="#-cell">20</td>
+      <td class="Team-cell"><img src="Giannis-Zographos-British-Football-Club-West-Bromwich-Albion.ico" width="19" height="19">&nbsp;&nbsp;West Bromwich Albion&nbsp;&nbsp;<span class="label label-danger">&darr; 4</span></td>
+      <td class="Games Played-cell">34</td>
+      <td class="Wins-cell">3</td>
+      <td class="Draws-cell">14</td>
+      <td class="Losses-cell">17</td>
+      <td class="Goals Scored-cell">6</td>
+      <td class="Points-cell">23</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+  </div>
+
+  <span class="label label-success">Champions League</span>
+  <span class="label label-info">Europa League</span>
+  <span class="label label-danger">Relegation</span>
+
+<br><br><br>
+
+<h1>Shuffle the cards</h1>
+<p class="lead">All 20 clubs' (huge) rise and fall under this <strike>unjustifiable</strike> new rule.</p>
+
+<script type='text/javascript' src='http://public.tableausoftware.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1144px; height: 658px;'><noscript><a href='#'><img alt='Slopegraphs ' src='http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Pr&#47;PremierLeagueslopegraph_final&#47;Slopegraphs&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1144' height='658' style='display:none;'><param name='host_url' value='http%3A%2F%2Fpublic.tableausoftware.com%2F' /> <param name='site_root' value='' /><param name='name' value='PremierLeagueslopegraph_final&#47;Slopegraphs' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /></object></div><div style='width:1144px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;'><div style='float:right; padding-right:8px;'></div></div>
+
+<h4>Daniel Sturridge (LIV): 21 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" style="width: 100%"></div>
+</div>
+
+<h4>Steven Gerrard (LIV): 13 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" style="width: 62%"></div>
+</div>
+
+<h4>Raheem Sterling (LIV): 9 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 43%"></div>
+</div>
+
+<p>Liverpool remain their dominance on the Premier League thanks to the 43 goals of in-form Daniel Sturridge, Steven Gerrard and Raheem Sterling. The Reds have a staggering 12 point lead on the chasing pack.</p>
+
+<br>
+
+<h4>Jay Rodriguez (SUN): 17 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" style="width: 81%"></div>
+</div>
+
+<h4>Rickie Lambert (SUN): 13 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" style="width: 62%"></div>
+</div>
+
+<h4>Adam Lallana (SUN): 10 goals</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: 48%"></div>
+</div>
+
+<p>Other teams who do well are Southampton, Cardiff City and Sunderland. The outstanding performance by the English attacking trio at Southampton (Jay Rodriguez, Rickie Lambert and Adam Lallana) secures them a second place on the table, defeating Premier League giant Manchester United who also have world-class English strikers like Wayne Rooney (17 goals).</p>
+
+<br>
+
+<h4>Manchester City: 87 goals by foreign players | 4 goals by English players</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info" style="width: 96%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 4%"></div>
+</div>
+
+<h4>Newcastle United: 38 goals by foreign players | 1 goal by English players</h4>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-info" style="width: 97%"></div>
+  <div class="progress-bar progress-bar-warning" style="width: 3%"></div>
+</div>
+
+<p>The biggest losers are unsurprisingly Manchester City and Newcastle. Among both teams only one English player (Joe Hart) made more than 15 apperances in the Premier League match starting squad. However, the fact that the Sky Blues drop 15 places to the delegation zone is still flabbergasting.</p>
+
+<br>
+
+<h1>Ouch, lions</h1>
+<p class="lead">How differently are the 20 clubs dependent on English players to score?</p>
+
+<script type='text/javascript' src='http://public.tableausoftware.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1144px; height: 658px;'><noscript><a href='#'><img alt='Dashboard 1 ' src='http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Pr&#47;PremierLeaguescatterplot_final&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1144' height='658' style='display:none;'><param name='host_url' value='http%3A%2F%2Fpublic.tableausoftware.com%2F' /> <param name='site_root' value='' /><param name='name' value='PremierLeaguescatterplot_final&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='no' /><param name='showVizHome' value='no' /></object></div><div style='width:1144px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;'><div style='float:right; padding-right:8px;'></div></div>
+
+<p>It has been 14 years since <a href="http://dailym.ai/1mREhFg" target="_blank">an English player</a> won the top scorer race in the Premier League. It has been 24 years since <a href="https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup" target="_blank">the England national football team</a> made to the semi-final of the World Cup. Yet, due to the remarkable performance by international talents like Luis Suárez (31 goals), Yaya Touré (20 goals) and Sergio Agüero (17 goals), the English Premier League is still <a href="http://dailym.ai/1mREhFg" target="_blank">the world's most watched football league</a> with an annual broadcast income of £1.2 billion.</p> 
+
+<p>It is quite obvious that clubs such as Cardiff City, Sunderland and Norwich City that are struggling at the bottom of the table either have a large number of English players on team or rely heavily on English players to score, while there is a very rare chance to see some of the enormously wealthy clubs like Manchester City have English players in club's starting 11 squad.</p>
+
+<p>However, Liverpool's remarkable performance and Brendan Rodgers' trust on young English talents (Daniel Sturridge, Raheem Sterling and Jordan Henderson) this season are a perfect example that several top English players would still survive, or even thrive in a title race. Especially when Manchester City face <a href="http://www.theguardian.com/football/2014/may/06/manchester-city-face-49m-fine-wage-cap-financial-fair-play" target="_blank">a fine</a> of €60m (£49m) from Uefa for their losses of £149 million the 2011-12 and 2012-13 seasons after buying Sergio Agüero, Samir Nasri, Gaël Clichy, Javi Garcia and Matija Nastasic, Liverpool's success with homegrown talents can be something replicable for others.</p>
+
+<br><br><br>
+
+<footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+            <li class="pull-right"><a href="#top"><span class="glyphicon glyphicon-collapse-up"></span>&nbsp;Back to top</a></li>
+            <p>Made by <a href="http://johnzongminchow.me" rel="nofollow">John Zongmin Chow</a>. Contact him at <a href="mailto:zz766@nyu.edu">zz766@nyu.edu</a>.</p>
+            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>. Club icons from <a href="http://www.iconarchive.com/" rel="nofollow">IconArchive</a>.</p>
+          </div>
+        </div>
+        <h5 id="progress-animated">Last updated: Round 35/38</h5>
+              <div class="progress progress-striped active">
+                <div class="progress-bar progress-bar-info" style="width: 92%"></div>
+              </div>
+      </footer>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://bootswatch.com/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://bootswatch.com/assets/js/bootswatch.js"></script>
+  </body>
+</html>
